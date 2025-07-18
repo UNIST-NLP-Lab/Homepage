@@ -202,13 +202,13 @@ export default function Component() {
                           variant="secondary"
                           className="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                         >
-                          Deep Learning
+                          NLP
                         </Badge>
                         <Badge
                           variant="secondary"
                           className="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                         >
-                          NLP
+                          Information Retrieval
                         </Badge>
                       </div>
                     </div>
@@ -253,22 +253,28 @@ export default function Component() {
                   description: "-",
                 },
                 {
-                  title: "Parameter-Efficient Fine-tuning with Adaptive Experts",
-                  authors: "Choi Master, Jung Student, Kim AI",
-                  venue: "ICML 2024",
-                  description: "적응형 전문가 네트워크를 활용한 효율적인 파인튜닝 방법론",
+                  title: "Wasserstein Distance Constraint and Parameter Sparsification for Batched and Iterative Knowledge Editing",
+                  authors: "Shanbao Qiao, Xuebing Liu,  Seung-Hoon Na",
+                  venue: "AAAI 2025",
+                  description: "-",
                 },
                 {
-                  title: "Scaling Laws for Mixture of Experts Language Models",
-                  authors: "Lee Postdoc, Han Research, Kim AI",
-                  venue: "ICLR 2024",
-                  description: "MoE 언어 모델의 스케일링 법칙에 대한 이론적, 실험적 분석",
+                  title: "SARCAT: Generative Span-Act Guided Response Generation using Copy-enhanced Target Augmentation",
+                  authors: "Jeong-Doo Lee, Hyeongjun Choi, Beomseok Hong, Youngsub Han, Byoung-Ki Jeon,  Seung-Hoon Na",
+                  venue: "EMNLP 2024 Findings",
+                  description: "-",
                 },
                 {
-                  title: "Green AI: Energy-Efficient Training of Large Models",
-                  authors: "Song Intern, Park Research, Kim AI",
-                  venue: "AAAI 2024",
-                  description: "대규모 모델의 친환경적 학습을 위한 새로운 최적화 기법",
+                  title: "DistillMIKE: Editing Distillation of Massive In-Context Knowledge Editing in Large Language Models",
+                  authors: "Shanbao Qiao, Xuebing Liu, Seung-Hoon Na",
+                  venue: "ACL 2024 Findings",
+                  description: "-",
+                },
+                {
+                  title: "RADCoT: Retrieval-Augmented Distillation to Specialization Models for Generating Chain-of-Thoughts in Query Expansion",
+                  authors: "Sung-Min Lee, Eunhwan Park, DongHyeon Jeon, Inho Kang, and Seung-Hoon Na",
+                  venue: "COLING 2024",
+                  description: "-",
                 },
               ].map((paper, index) => (
                 <Card
@@ -333,34 +339,14 @@ export default function Component() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  date: "2024.12.15",
-                  title: "NeurIPS 2024 논문 발표",
-                  description: "MoE 효율성 개선 연구로 spotlight 논문 선정",
+                  date: "2025.05",
+                  title: "재난안전연구원 과제 선정",
+                  description: "생성형 AI 기반 안전제도 진단 지원시스템 개발",
                 },
                 {
-                  date: "2024.11.20",
-                  title: "새로운 연구원 합류",
-                  description: "Google Research 출신 박연구 박사 합류",
-                },
-                {
-                  date: "2024.10.30",
-                  title: "연구비 수주",
-                  description: "과기정통부 AI 대학원 사업 10억원 수주",
-                },
-                {
-                  date: "2024.10.15",
-                  title: "국제 워크샵 개최",
-                  description: "LLM & MoE 국제 워크샵 성공적 개최",
-                },
-                {
-                  date: "2024.09.25",
-                  title: "산학협력 체결",
-                  description: "네이버, 카카오와 AI 연구 협력 MOU 체결",
-                },
-                {
-                  date: "2024.09.10",
-                  title: "오픈소스 공개",
-                  description: "EfficientMoE 라이브러리 GitHub 공개",
+                  date: "2025.04",
+                  title: "새로운 학생 합류",
+                  description: "석박통합과정 민동욱 학생 합류",
                 },
               ].map((news, index) => (
                 <Card
@@ -448,8 +434,8 @@ export default function Component() {
                   <div className="space-y-2">
                     <h4 className="font-medium text-gray-900 dark:text-white">{t("home.contact.fields")}</h4>
                     <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                      <li>• 박사과정 학생 (Machine Learning, NLP)</li>
-                      <li>• 석사과정 학생 (Computer Science)</li>
+                      <li>• 박사과정 학생 (NLP, LLM, MoE, RAG)</li>
+                      <li>• 석사과정 학생 (NLP, LLM, MoE, RAG)</li>
                       <li>• 포스닥 연구원 (AI Systems)</li>
                       <li>• 학부 인턴 (Programming, Research)</li>
                     </ul>

@@ -54,10 +54,10 @@ const translations = {
     "home.team.title": "Our Team",
     "home.team.subtitle": "세계적 수준의 연구진과 함께 AI의 미래를 만들어갑니다",
     "home.team.pi": "Principal Investigator",
-    "home.team.professor": "김AI 교수",
-    "home.team.professorTitle": "Professor of Computer Science",
+    "home.team.professor": "나승훈 교수",
+    "home.team.professorTitle": "Professor of Artificial Intelligence Graduate School, Dept. of Computer Science & Engineering",
     "home.team.professorDesc":
-      "Stanford University Ph.D., 15년간 AI 연구 경력, Nature, Science 등 최고 저널 100편 이상 논문 발표",
+      "ACL, NAACL, EMNLP, AAAI 등 최고 권위의 자연어처리 학회의 논문 보유",
     "home.team.meetTeam": "Meet Our Team",
 
     // Publications
@@ -86,7 +86,7 @@ const translations = {
     "footer.description": "차세대 AI 기술을 통해 인류의 미래를 만들어갑니다.",
     "footer.quickLinks": "Quick Links",
     "footer.connect": "Connect",
-    "footer.copyright": "© 2024 AI Research Lab. All rights reserved.",
+    "footer.copyright": "© 2025 UNIST NLP Lab. All rights reserved.",
 
     // Research Page
     "research.title": "Research Areas",
@@ -221,10 +221,10 @@ const translations = {
     "home.team.title": "Our Team",
     "home.team.subtitle": "Creating the future of AI with world-class researchers",
     "home.team.pi": "Principal Investigator",
-    "home.team.professor": "Prof. AI Kim",
+    "home.team.professor": "Prof. Seung-Hoon Na",
     "home.team.professorTitle": "Professor of Computer Science",
     "home.team.professorDesc":
-      "Stanford University Ph.D., 15 years of AI research experience, published over 100 papers in top journals including Nature and Science",
+      "Possesses papers published in top-tier NLP conferences such as ACL, NAACL, EMNLP, and AAAI.",
     "home.team.meetTeam": "Meet Our Team",
 
     // Publications

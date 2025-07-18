@@ -54,11 +54,11 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold mb-2">{t("contact.address")}</h3>
                           <p className="text-gray-600 dark:text-gray-400">
-                            서울특별시 강남구 테헤란로 123
+                            울산광역시 울주군 언양읍 유니스트길 50
                             <br />
-                            AI대학교 공과대학 301호
+                            제3공학관(106동) 807A호
                             <br />
-                            우편번호: 06234
+                            우편번호: 44919
                           </p>
                         </div>
                       </div>
@@ -74,45 +74,9 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold mb-2">{t("contact.email")}</h3>
                           <div className="space-y-1 text-gray-600 dark:text-gray-400">
-                            <p>일반 문의: ailab@university.ac.kr</p>
-                            <p>입학 문의: admission@ailab.ac.kr</p>
-                            <p>연구 협력: research@ailab.ac.kr</p>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-0 shadow-lg dark:bg-neutral-950 dark:text-neutral-50">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="h-12 w-12 rounded-lg bg-purple-100 dark:bg-purple-900 flex items-center justify-center flex-shrink-0">
-                          <Phone className="h-6 w-6 text-purple-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold mb-2">{t("contact.phone")}</h3>
-                          <div className="space-y-1 text-gray-600 dark:text-gray-400">
-                            <p>연구실: +82-2-1234-5678</p>
-                            <p>교수실: +82-2-1234-5679</p>
-                            <p>팩스: +82-2-1234-5680</p>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="border-0 shadow-lg dark:bg-neutral-950 dark:text-neutral-50">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="h-12 w-12 rounded-lg bg-orange-100 dark:bg-orange-900 flex items-center justify-center flex-shrink-0">
-                          <Clock className="h-6 w-6 text-orange-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold mb-2">{t("contact.hours")}</h3>
-                          <div className="space-y-1 text-gray-600 dark:text-gray-400">
-                            <p>평일: 09:00 - 18:00</p>
-                            <p>점심시간: 12:00 - 13:00</p>
-                            <p>주말 및 공휴일: 휴무</p>
+                            <p>일반 문의: nash@unist.ac.kr</p>
+                            <p>입학 문의: nash@unist.ac.kr</p>
+                            <p>연구 협력: nash@unist.ac.kr</p>
                           </div>
                         </div>
                       </div>
@@ -137,15 +101,13 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-semibold mb-2">{t("contact.bus")}</h3>
                         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                          <li>• 간선버스: 146, 360, 740</li>
-                          <li>• 지선버스: 3412, 4319</li>
-                          <li>• 광역버스: 9407, 1100</li>
+                          <li>• 버스: 513, 713, 743, 753</li>
                         </ul>
                       </div>
                       <div>
                         <h3 className="font-semibold mb-2">{t("contact.parking")}</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                          건물 지하 1-3층 주차장 이용 가능 (유료)
+                          건물 앞 주차장 이용 가능(유료)
                         </p>
                       </div>
                     </div>
@@ -276,17 +238,16 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-semibold mb-2">{t("contact.recruitmentAreas")}</h4>
                       <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                        <li>• 박사과정 학생 (Machine Learning, NLP)</li>
-                        <li>• 석사과정 학생 (Computer Science)</li>
-                        <li>• 포스닥 연구원 (AI Systems)</li>
-                        <li>• 학부 인턴 (Programming, Research)</li>
+                        <li>• 박사과정 학생 (NLP, LLM, MoE, RAG)</li>
+                        <li>• 석사과정 학생 (NLP, LLM, MoE, RAG)</li>
+                        <li>• 포스닥 연구원 (NLP, LLM, MoE, RAGs)</li>
+                        <li>• 학부 인턴 (NLP, LLM, MoE, RAG)</li>
                       </ul>
                     </div>
 
                     <div>
                       <h4 className="font-semibold mb-2">{t("contact.qualifications")}</h4>
                       <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                        <li>• 컴퓨터 과학, 수학, 통계학 등 관련 전공</li>
                         <li>• Python, PyTorch 등 프로그래밍 경험</li>
                         <li>• 머신러닝, 딥러닝에 대한 기본 지식</li>
                         <li>• 영어 논문 읽기 및 작성 능력</li>
@@ -297,9 +258,7 @@ export default function ContactPage() {
                       <h4 className="font-semibold mb-2">{t("contact.documents")}</h4>
                       <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
                         <li>• 이력서 (CV)</li>
-                        <li>• 자기소개서</li>
                         <li>• 성적증명서</li>
-                        <li>• 추천서 (해당자에 한함)</li>
                       </ul>
                     </div>
                   </div>

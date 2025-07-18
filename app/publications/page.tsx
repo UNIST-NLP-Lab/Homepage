@@ -14,10 +14,10 @@ import { useLanguage } from "@/contexts/language-context"
 const publications = [
   {
     id: 1,
-    title: "Efficient Mixture of Experts for Large Language Models",
-    authors: "Kim AI, Park Research, Lee Postdoc",
-    venue: "NeurIPS 2024",
-    year: 2024,
+    title: "Optimizing Causality-Based Radiology Reporting with Retrieval-Augmented and Structured Reasoning Approaches for the NTCIR-18 HIDDEN-RAD Task",
+    authors: "Ju-Min Cho, Ho-Jin Yi, Myung-Kyu Kim, Se-Jin Jeong and Seung-Hoon Na",
+    venue: "NTCIR-18",
+    year: 2025,
     category: "MoE",
     description: "새로운 MoE 라우팅 알고리즘을 통해 계산 효율성을 40% 향상시킨 연구",
     abstract:

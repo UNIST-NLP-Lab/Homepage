@@ -11,99 +11,30 @@ import { FallbackImg } from "@/components/fallback-img"
 const newsData = [
   {
     id: 1,
-    title: "NeurIPS 2024 논문 발표 성공",
-    category: "학회",
-    date: "2024.12.15",
-    author: "김AI 교수",
-    excerpt: "우리 연구실의 MoE 효율성 개선 연구가 NeurIPS 2024에서 spotlight 논문으로 선정되어 발표되었습니다.",
-    content:
-      "올해 NeurIPS 2024에서 우리 연구실의 '효율적인 전문가 혼합 모델을 위한 새로운 라우팅 알고리즘' 연구가 spotlight 논문으로 선정되어 발표되었습니다. 이 연구는 기존 MoE 모델 대비 계산 효율성을 40% 향상시킨 혁신적인 접근 방식을 제안했습니다.",
+    title: "ACL 2025 Findings 논문 발표 성공",
+    category: "논문",
+    date: "2025.07",
+    excerpt: "우리 연구실의 Knowledge Editing 연구가 ACL 2025 Findings에 채택되어 발표 예정입니다.",
     image: "/placeholder.png",
-    tags: ["NeurIPS", "MoE", "논문발표"],
+    tags: ["ACL", "Knowledge Editing", "논문발표"],
   },
   {
     id: 2,
-    title: "Google Research 출신 박연구 박사 합류",
-    category: "인사",
-    date: "2024.11.20",
-    author: "연구실 관리자",
-    excerpt: "Google Research에서 5년간 근무한 박연구 박사가 우리 연구실의 수석 연구원으로 합류했습니다.",
-    content:
-      "Google Research에서 대규모 언어 모델 아키텍처 설계 분야에서 5년간 활동한 박연구 박사가 우리 연구실의 수석 연구원으로 합류했습니다.",
+    title: "재난안전연구원 과제 선정",
+    category: "과제",
+    date: "2025.05",
+    excerpt: "우리 연구실이 재난안전연구원 \"생성형 AI기반 안전 제도 진단 지원 시스템 개발\" 과제에 선정되었습니다.",
     image: "/placeholder.png",
-    tags: ["신규합류", "Google", "연구진"],
+    tags: ["과제선정", "재난안전연구원", "생성형 AI"],
   },
   {
     id: 3,
-    title: "과기정통부 AI 대학원 사업 10억원 수주",
-    category: "연구비",
-    date: "2024.10.30",
-    author: "김AI 교수",
-    excerpt: "과학기술정보통신부의 AI 대학원 지원 사업에 선정되어 향후 3년간 10억원의 연구비를 지원받게 되었습니다.",
-    content:
-      "우리 연구실이 과학기술정보통신부의 'AI 대학원 지원 사업'에 선정되어 향후 3년간 총 10억원의 연구비를 지원받게 되었습니다. 이번 사업은 '차세대 효율적 AI 시스템 개발'을 주제로 하며, 대규모 언어 모델의 효율성 향상과 전문가 혼합 모델의 실용화에 중점을 둡니다. 연구비는 주로 고성능 컴퓨팅 인프라 구축, 우수 연구 인력 확보, 그리고 국제 공동 연구 활동에 활용될 예정입니다. 특히 A100 GPU 클러스터 확장과 차세대 H100 GPU 도입을 통해 조 단위 파라미터 모델 연구가 가능한 환경을 구축할 계획입니다. 이를 통해 우리나라의 AI 기술 경쟁력을 한층 더 높일 수 있을 것으로 기대됩니다.",
+    title: "첫번째 학생 합류",
+    category: "인사",
+    date: "2025.04",
+    excerpt: "우리 연구실에 석박통합과정 민동욱 학생이 첫번째 학생으로 합류하였습니다.",
     image: "/placeholder.png",
-    tags: ["연구비", "과기정통부", "AI대학원"],
-  },
-  {
-    id: 4,
-    title: "LLM & MoE 국제 워크샵 성공적 개최",
-    category: "행사",
-    date: "2024.10.15",
-    author: "이박사 연구원",
-    excerpt: "서울에서 개최된 'LLM & MoE 국제 워크샵 2024'에 전 세계 200여 명의 연구자들이 참석했습니다.",
-    content:
-      "지난 10월 15일부터 17일까지 3일간 서울 코엑스에서 개최된 'LLM & MoE 국제 워크샵 2024'가 성공적으로 마무리되었습니다. 이번 워크샵에는 전 세계 30개국에서 200여 명의 AI 연구자들이 참석하여 최신 연구 성과를 공유하고 미래 연구 방향을 논의했습니다. 주요 발표자로는 OpenAI의 수석 연구원, Google DeepMind의 연구 디렉터, Meta AI의 수석 과학자 등이 참여했습니다. 워크샵에서는 총 50편의 논문이 발표되었으며, 특히 우리 연구실에서 발표한 '적응형 MoE 아키텍처' 연구가 Best Paper Award를 수상했습니다. 또한 산업계와 학계 간의 협력 방안을 모색하는 패널 토론도 활발히 진행되었습니다.",
-    image: "/placeholder.png",
-    tags: ["워크샵", "국제행사", "LLM", "MoE"],
-  },
-  {
-    id: 5,
-    title: "네이버, 카카오와 AI 연구 협력 MOU 체결",
-    category: "협력",
-    date: "2024.09.25",
-    author: "김AI 교수",
-    excerpt: "국내 대표 IT 기업인 네이버와 카카오와 AI 기술 공동 연구를 위한 업무협약을 체결했습니다.",
-    content:
-      "우리 연구실이 네이버와 카카오와 AI 기술 공동 연구를 위한 업무협약(MOU)을 체결했습니다. 이번 협약을 통해 세 기관은 대규모 언어 모델 개발, 효율적인 AI 시스템 구축, 그리고 실용적인 AI 서비스 개발 분야에서 긴밀히 협력하게 됩니다. 네이버는 HyperCLOVA X 모델 개발 경험과 대규모 데이터를 제공하고, 카카오는 KoGPT 시리즈 개발 노하우와 실서비스 적용 경험을 공유할 예정입니다. 우리 연구실은 최신 MoE 기술과 효율적인 학습 알고리즘을 제공하여 한국어 특화 대규모 언어 모델의 성능을 한층 더 향상시킬 계획입니다. 이번 협력을 통해 개발된 기술은 검색, 번역, 대화형 AI 등 다양한 서비스에 적용될 예정입니다.",
-    image: "/placeholder.png",
-    tags: ["산학협력", "네이버", "카카오", "MOU"],
-  },
-  {
-    id: 6,
-    title: "EfficientMoE 라이브러리 GitHub 공개",
-    category: "오픈소스",
-    date: "2024.09.10",
-    author: "한연구원",
-    excerpt: "우리 연구실에서 개발한 효율적인 MoE 모델 학습을 위한 오픈소스 라이브러리를 GitHub에 공개했습니다.",
-    content:
-      "우리 연구실에서 개발한 'EfficientMoE' 라이브러리를 GitHub에 오픈소스로 공개했습니다. 이 라이브러리는 전문가 혼합 모델(MoE)의 효율적인 학습과 추론을 위한 다양한 최적화 기법을 제공합니다. 주요 기능으로는 동적 전문가 라우팅, 부하 균형 최적화, 메모리 효율적인 전문가 관리, 그리고 분산 학습 지원 등이 있습니다. 특히 PyTorch와 완벽하게 호환되며, Hugging Face Transformers와의 통합도 지원합니다. 공개 첫 주 만에 GitHub에서 1,000개 이상의 스타를 받으며 AI 연구 커뮤니티의 큰 관심을 받고 있습니다. 현재 전 세계 50여 개 연구기관에서 이 라이브러리를 활용하여 MoE 모델 연구를 진행하고 있으며, 지속적인 업데이트와 기능 개선을 통해 연구 생태계에 기여할 예정입니다.",
-    image: "/placeholder.png",
-    tags: ["오픈소스", "GitHub", "EfficientMoE", "라이브러리"],
-  },
-  {
-    id: 7,
-    title: "ICML 2024 Tutorial 세션 진행",
-    category: "학회",
-    date: "2024.07.22",
-    author: "김AI 교수",
-    excerpt: "ICML 2024에서 'Efficient Training of Large-Scale MoE Models' 튜토리얼 세션을 진행했습니다.",
-    content:
-      "지난 7월 오스트리아 빈에서 열린 ICML 2024에서 우리 연구실의 김AI 교수가 'Efficient Training of Large-Scale MoE Models'라는 주제로 튜토리얼 세션을 진행했습니다. 이 세션에는 전 세계에서 300여 명의 연구자들이 참석하여 MoE 모델의 효율적인 학습 방법에 대해 배우고 토론했습니다. 튜토리얼에서는 MoE 모델의 기본 원리부터 최신 연구 동향, 실제 구현 방법, 그리고 대규모 분산 학습 기법까지 폭넓은 내용을 다뤘습니다. 특히 우리 연구실에서 개발한 새로운 라우팅 알고리즘과 부하 균형 기법에 대한 설명이 큰 호응을 얻었습니다. 세션 후에는 활발한 질의응답이 이어졌으며, 많은 연구자들이 협력 연구에 대한 관심을 표명했습니다.",
-    image: "/placeholder.png",
-    tags: ["ICML", "튜토리얼", "MoE", "학회발표"],
-  },
-  {
-    id: 8,
-    title: "AI 윤리 및 안전성 연구 프로젝트 시작",
-    category: "연구",
-    date: "2024.06.15",
-    author: "이박사 연구원",
-    excerpt: "대규모 AI 모델의 윤리적 사용과 안전성 확보를 위한 새로운 연구 프로젝트를 시작했습니다.",
-    content:
-      "우리 연구실이 대규모 AI 모델의 윤리적 사용과 안전성 확보를 위한 새로운 연구 프로젝트를 시작했습니다. 이 프로젝트는 'Responsible AI for Large-Scale Models'라는 제목으로 향후 2년간 진행될 예정입니다. 주요 연구 분야는 AI 모델의 편향성 감지 및 완화, 유해 콘텐츠 생성 방지, 모델 해석 가능성 향상, 그리고 프라이버시 보호 기술 개발 등입니다. 특히 MoE 모델에서 전문가별 편향성을 분석하고 이를 완화하는 새로운 방법론을 개발할 계획입니다. 이 연구는 스탠포드 대학교의 HAI(Human-Centered AI Institute)와 공동으로 진행되며, 국내외 AI 윤리 전문가들과의 협력을 통해 실용적이고 효과적인 솔루션을 개발할 예정입니다.",
-    image: "/placeholder.png",
-    tags: ["AI윤리", "안전성", "책임있는AI", "연구프로젝트"],
+    tags: ["AI대학원"],
   },
 ]
 
@@ -140,10 +71,6 @@ export default function NewsPage() {
                       <Calendar className="h-4 w-4 text-gray-500 dark:text-gray-400" />
                       {newsData[0].date}
                     </div>
-                    <div className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
-                      <User className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-                      {newsData[0].author}
-                    </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4">{newsData[0].title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed dark:text-gray-300">{newsData[0].excerpt}</p>
@@ -154,13 +81,13 @@ export default function NewsPage() {
                       </Badge>
                     ))}
                   </div>
-                  <Link
+                  {/* <Link
                     href={`/news/${newsData[0].id}`}
                     className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
                   >
                     {t("news.readMore")}
                     <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </Card>
@@ -196,7 +123,6 @@ export default function NewsPage() {
                       </div>
                     </div>
                     <CardTitle className="text-lg leading-tight">{news.title}</CardTitle>
-                    <CardDescription className="text-sm dark:text-gray-400">{news.author}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-gray-600 mb-4 leading-relaxed dark:text-gray-300">{news.excerpt}</p>
@@ -207,20 +133,20 @@ export default function NewsPage() {
                         </Badge>
                       ))}
                     </div>
-                    <Link
+                    {/* <Link
                       href={`/news/${news.id}`}
                       className="inline-flex items-center text-blue-600 hover:text-blue-700 text-sm font-medium"
                     >
                       {t("news.readMore")}
                       <ArrowRight className="ml-1 h-3 w-3" />
-                    </Link>
+                    </Link> */}
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
 
-          {/* 더 보기 버튼 */}
+          {/* 더 보기 버튼
           <div className="text-center mt-12">
             <Link
               href="/news/archive"
@@ -229,7 +155,7 @@ export default function NewsPage() {
               {t("news.viewMore")}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
