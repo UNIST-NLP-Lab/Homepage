@@ -91,17 +91,17 @@ export default function ContactPage() {
                 <Card className="border-0 shadow-lg dark:bg-neutral-950 dark:text-neutral-50">
                   <CardContent className="p-6">
                     <div className="space-y-4">
-                      <div>
+                      {/* <div>
                         <h3 className="font-semibold mb-2">{t("contact.subway")}</h3>
                         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
                           <li>• 2호선 강남역 3번 출구에서 도보 5분</li>
                           <li>• 9호선 신논현역 1번 출구에서 도보 7분</li>
                         </ul>
-                      </div>
+                      </div> */}
                       <div>
                         <h3 className="font-semibold mb-2">{t("contact.bus")}</h3>
                         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                          <li>• 버스: 513, 713, 743, 753</li>
+                          <li>• 울산역에서 버스: 513, 713, 743, 753</li>
                         </ul>
                       </div>
                       <div>

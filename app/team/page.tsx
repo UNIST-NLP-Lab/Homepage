@@ -20,7 +20,7 @@ export default function TeamPage() {
           <Tabs defaultValue="faculty" className="w-full">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
               <TabsTrigger value="faculty">{t("team.faculty")}</TabsTrigger>
-              <TabsTrigger value="researchers">{t("team.researchers")}</TabsTrigger>
+              {/* <TabsTrigger value="researchers">{t("team.researchers")}</TabsTrigger> */}
               <TabsTrigger value="students">{t("team.students")}</TabsTrigger>
             </TabsList>
 
