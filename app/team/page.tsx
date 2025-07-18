@@ -20,7 +20,6 @@ export default function TeamPage() {
           <Tabs defaultValue="faculty" className="w-full">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
               <TabsTrigger value="faculty">{t("team.faculty")}</TabsTrigger>
-              {/* <TabsTrigger value="researchers">{t("team.researchers")}</TabsTrigger> */}
               <TabsTrigger value="students">{t("team.students")}</TabsTrigger>
             </TabsList>
 
@@ -133,127 +132,7 @@ export default function TeamPage() {
                 </Card>
               </div>
             </TabsContent>
-
-            {/* <TabsContent value="researchers" className="space-y-12">
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-                {[
-                  {
-                    name: "박연구",
-                    role: "Senior Researcher",
-                    focus: "LLM Architecture",
-                    bio: "Google Research 출신으로 대규모 언어 모델 아키텍처 설계 전문가. 10년 이상의 AI 연구 경력 보유.",
-                    education: "Ph.D. in Computer Science, UC Berkeley",
-                    interests: ["Neural Architecture", "Efficient Training", "Model Compression"],
-                  },
-                  {
-                    name: "이박사",
-                    role: "Postdoc Researcher",
-                    focus: "MoE Systems",
-                    bio: "전문가 혼합 모델 시스템 설계 및 최적화 전문가. ICLR, NeurIPS 등 주요 학회에 다수 논문 발표.",
-                    education: "Ph.D. in Machine Learning, Carnegie Mellon University",
-                    interests: ["Mixture of Experts", "Distributed Systems", "Routing Algorithms"],
-                  },
-                  {
-                    name: "정연구원",
-                    role: "Research Scientist",
-                    focus: "Green AI",
-                    bio: "에너지 효율적인 AI 시스템 개발 전문가. 이전에 NVIDIA Research에서 근무한 경험 보유.",
-                    education: "Ph.D. in Computer Engineering, ETH Zurich",
-                    interests: ["Energy Efficiency", "Hardware Optimization", "Sustainable AI"],
-                  },
-                  {
-                    name: "최연구원",
-                    role: "Research Scientist",
-                    focus: "Multi-modal Learning",
-                    bio: "다중 모달 학습 및 비전-언어 모델 통합 전문가. Meta AI 출신 연구원.",
-                    education: "Ph.D. in Computer Vision, University of Toronto",
-                    interests: ["Vision-Language Models", "Multi-modal Fusion", "Representation Learning"],
-                  },
-                  {
-                    name: "한연구원",
-                    role: "Research Engineer",
-                    focus: "AI Systems",
-                    bio: "대규모 AI 시스템 구축 및 배포 전문가. 이전에 Amazon AWS에서 근무한 경험 보유.",
-                    education: "M.S. in Computer Science, KAIST",
-                    interests: ["Distributed Training", "Cloud Infrastructure", "MLOps"],
-                  },
-                  {
-                    name: "김연구원",
-                    role: "Visiting Researcher",
-                    focus: "Federated Learning",
-                    bio: "연합 학습 및 프라이버시 보존 AI 전문가. 현재 1년간 방문 연구원으로 활동 중.",
-                    education: "Ph.D. in Privacy-Preserving ML, Oxford University",
-                    interests: ["Federated Learning", "Differential Privacy", "Secure Computation"],
-                  },
-                ].map((researcher, i) => (
-                  <Card
-                    key={i}
-                    className="border-0 shadow-lg overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
-                  >
-                    <CardContent className="p-0">
-                      <div className="bg-gradient-to-br from-gray-100 to-blue-100 p-6 flex items-center justify-center">
-                        <div className="h-24 w-24 rounded-full bg-white/50 backdrop-blur-sm flex items-center justify-center">
-                          <Users className="h-12 w-12 text-gray-600 dark:text-blue-400" />
-                        </div>
-                      </div>
-                      <div className="p-6">
-                        <div className="flex justify-between items-start mb-4">
-                          <div>
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white">{researcher.name}</h3>
-                            <p className="text-sm text-blue-600">{researcher.role}</p>
-                          </div>
-                          <div className="flex gap-1">
-                            <Link href="#" className="text-gray-400 hover:text-gray-600">
-                              <Mail className="h-4 w-4" />
-                            </Link>
-                            <Link href="#" className="text-gray-400 hover:text-gray-600">
-                              <Github className="h-4 w-4" />
-                            </Link>
-                          </div>
-                        </div>
-
-                        <div className="space-y-4">
-                          <div>
-                            <p className="text-sm font-medium mb-1 text-gray-900 dark:text-white">{t("team.focus")}</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-300">{researcher.focus}</p>
-                          </div>
-
-                          <div>
-                            <p className="text-sm font-medium mb-1 text-gray-900 dark:text-white">{t("team.bio")}</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-300">{researcher.bio}</p>
-                          </div>
-
-                          <div>
-                            <p className="text-sm font-medium mb-1 text-gray-900 dark:text-white">
-                              {t("team.education")}
-                            </p>
-                            <p className="text-sm text-gray-600 dark:text-gray-300">{researcher.education}</p>
-                          </div>
-
-                          <div>
-                            <p className="text-sm font-medium mb-1 text-gray-900 dark:text-white">
-                              {t("team.interests")}
-                            </p>
-                            <div className="flex flex-wrap gap-1">
-                              {researcher.interests.map((interest, j) => (
-                                <Badge
-                                  key={j}
-                                  variant="outline"
-                                  className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
-                                >
-                                  {interest}
-                                </Badge>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent> */}
-
+            
             <TabsContent value="students" className="space-y-12">
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {[
