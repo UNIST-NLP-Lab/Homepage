@@ -79,7 +79,7 @@ export default function TeamPage() {
                               variant="secondary"
                               className="bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                             >
-                              Efficient AI Systems
+                              Knowledge Editing
                             </Badge>
                             <Badge
                               variant="secondary"
@@ -101,15 +101,15 @@ export default function TeamPage() {
                           <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                             <li className="flex items-center gap-2">
                               <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                              <span>Ph.D. in Computer Science, Stanford University</span>
+                              <span>Ph.D. in Computer Science, POSTECH</span>
                             </li>
                             <li className="flex items-center gap-2">
                               <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                              <span>M.S. in Computer Science, MIT</span>
+                              <span>M.S. in Computer Science, POSTECH</span>
                             </li>
                             <li className="flex items-center gap-2">
                               <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                              <span>B.S. in Electrical Engineering, Seoul National University</span>
+                              <span>B.S. in Information and Computer Science, Ajou University</span>
                             </li>
                           </ul>
                         </div>
@@ -119,15 +119,11 @@ export default function TeamPage() {
                           <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                             <li className="flex items-center gap-2">
                               <Award className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                              <span>ACM Distinguished Scientist, 2023</span>
+                              <span>한국정보과학회 특별 공로상, 2024</span>
                             </li>
                             <li className="flex items-center gap-2">
                               <Award className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                              <span>Best Paper Award, NeurIPS 2022</span>
-                            </li>
-                            <li className="flex items-center gap-2">
-                              <Award className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-                              <span>AI Researcher of the Year, 2021</span>
+                              <span>한국정보과학회 최우수 논문상 2022</span>
                             </li>
                           </ul>
                         </div>
@@ -138,7 +134,7 @@ export default function TeamPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="researchers" className="space-y-12">
+            {/* <TabsContent value="researchers" className="space-y-12">
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {[
                   {
@@ -256,82 +252,87 @@ export default function TeamPage() {
                   </Card>
                 ))}
               </div>
-            </TabsContent>
+            </TabsContent> */}
 
             <TabsContent value="students" className="space-y-12">
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {[
                   {
-                    name: "최석사",
+                    name: "최형준",
                     role: "Ph.D. Student",
-                    year: "3rd Year",
-                    focus: "Model Optimization",
-                    thesis: "Adaptive Sparse Training for Large Language Models",
-                    advisor: "김AI 교수",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                   {
-                    name: "정학생",
+                    name: "이건희",
                     role: "Ph.D. Student",
-                    year: "2nd Year",
-                    focus: "Distributed Training",
-                    thesis: "Scalable Training Methods for Trillion-Parameter Models",
-                    advisor: "김AI 교수",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                   {
-                    name: "이학생",
+                    name: "Chunmei Liu",
                     role: "Ph.D. Student",
-                    year: "1st Year",
-                    focus: "Efficient Inference",
-                    thesis: "Hardware-Aware Inference Optimization for MoE Models",
-                    advisor: "김AI 교수",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                   {
-                    name: "박학생",
-                    role: "M.S. Student",
-                    year: "2nd Year",
-                    focus: "Few-shot Learning",
-                    thesis: "In-context Learning Capabilities of Sparse Expert Models",
-                    advisor: "김AI 교수",
+                    name: "민동욱",
+                    role: "Ph.D. - Master Combine Student",
+                    year: "4th Semester",
+                    focus: "Conversational AI",
+                    thesis: "Natural Language Interaction via Conversational AI",
                   },
                   {
-                    name: "김학생",
-                    role: "M.S. Student",
-                    year: "1st Year",
-                    focus: "Interpretability",
-                    thesis: "Understanding Expert Specialization in MoE Models",
-                    advisor: "김AI 교수",
+                    name: "이승호",
+                    role: "Ph.D. - Master Combine Student",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                   {
-                    name: "송인턴",
-                    role: "Undergraduate Intern",
-                    year: "Senior",
-                    focus: "Evaluation Metrics",
-                    thesis: "Comprehensive Evaluation Framework for LLM Performance",
-                    advisor: "박연구 연구원",
+                    name: "바자르와니 주치",
+                    role: "Ph.D. - Master Combine Student",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                   {
-                    name: "정인턴",
-                    role: "Undergraduate Intern",
-                    year: "Junior",
-                    focus: "Data Processing",
-                    thesis: "Efficient Data Processing Pipeline for LLM Training",
-                    advisor: "이박사 연구원",
+                    name: "강전휘",
+                    role: "Ph.D. - Master Combine Student",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                   {
-                    name: "한인턴",
-                    role: "Undergraduate Intern",
-                    year: "Senior",
-                    focus: "Visualization",
-                    thesis: "Interactive Visualization Tools for MoE Behavior Analysis",
-                    advisor: "최연구원 연구원",
+                    name: "이준규",
+                    role: "Ph.D. - Master Combine Student",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                   {
-                    name: "조인턴",
-                    role: "Undergraduate Intern",
-                    year: "Junior",
-                    focus: "Benchmarking",
-                    thesis: "Comprehensive Benchmarking Suite for Efficient AI Models",
-                    advisor: "한연구원 연구원",
+                    name: "안정민",
+                    role: "Master Student",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
+                  },
+                  {
+                    name: "이균",
+                    role: "Master Student",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
+                  },
+                  {
+                    name: "박양렬",
+                    role: "Master Student",
+                    year: "1st Semester",
+                    focus: "-",
+                    thesis: "-",
                   },
                 ].map((student, i) => (
                   <Card
@@ -360,10 +361,6 @@ export default function TeamPage() {
                             <div>
                               <p className="font-medium text-gray-900 dark:text-white">{t("team.thesis")}</p>
                               <p className="text-gray-600 dark:text-gray-300">{student.thesis}</p>
-                            </div>
-                            <div>
-                              <p className="font-medium text-gray-900 dark:text-white">{t("team.advisor")}</p>
-                              <p className="text-gray-600 dark:text-gray-300">{student.advisor}</p>
                             </div>
                           </div>
                         </div>

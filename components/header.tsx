@@ -63,8 +63,8 @@ export function Header() {
         <Link href="/" className="flex items-center space-x-2 flex-shrink-0 min-w-0">
           <Brain className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600 dark:text-blue-400 flex-shrink-0" />
           <div className="min-w-0">
-            <h1 className="text-base sm:text-xl font-bold text-gray-900 dark:text-white truncate">AI Research Lab</h1>
-            <p className="text-xs text-gray-600 dark:text-gray-400 truncate hidden sm:block">LLM & MoE Laboratory</p>
+            <h1 className="text-base sm:text-xl font-bold text-gray-900 dark:text-white truncate">UNIST NLP Lab</h1>
+            <p className="text-xs text-gray-600 dark:text-gray-400 truncate hidden sm:block">LLM Laboratory</p>
           </div>
         </Link>
 
