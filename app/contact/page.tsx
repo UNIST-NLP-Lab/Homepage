@@ -38,7 +38,7 @@ export default function ContactPage() {
       <PageHeader title={t("contact.title")} description={t("contact.subtitle")} />
 
       <section className="py-16">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           <div className="grid gap-12 lg:grid-cols-2">
             {/* 연락처 정보 */}
             <div className="space-y-8">
@@ -279,7 +279,7 @@ export default function ContactPage() {
                         <li>• 박사과정 학생 (Machine Learning, NLP)</li>
                         <li>• 석사과정 학생 (Computer Science)</li>
                         <li>• 포스닥 연구원 (AI Systems)</li>
-                        <li>��� 학부 인턴 (Programming, Research)</li>
+                        <li>• 학부 인턴 (Programming, Research)</li>
                       </ul>
                     </div>
 

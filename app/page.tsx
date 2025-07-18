@@ -15,23 +15,25 @@ export default function Component() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full py-20 md:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-6">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
+              <div className="space-y-6 text-center lg:text-left">
                 <div className="space-y-4">
                   <Badge
                     variant="outline"
-                    className="text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-800"
+                    className="text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-800 mx-auto lg:mx-0"
                   >
                     {t("home.hero.badge")}
                   </Badge>
-                  <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-gray-900 dark:text-white">
+                  <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white">
                     {t("home.hero.title")}
                     <span className="text-blue-600 dark:text-blue-400">{t("home.hero.titleHighlight")}</span>
                   </h1>
-                  <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl">{t("home.hero.description")}</p>
+                  <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0">
+                    {t("home.hero.description")}
+                  </p>
                 </div>
-                <div className="flex flex-col gap-4 sm:flex-row">
+                <div className="flex flex-col gap-4 sm:flex-row justify-center lg:justify-start">
                   <Button
                     size="lg"
                     className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700"
@@ -52,8 +54,8 @@ export default function Component() {
                   </Button>
                 </div>
               </div>
-              <div className="relative">
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 p-8">
+              <div className="relative flex justify-center lg:justify-end">
+                <div className="w-full max-w-md aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 p-8">
                   <div className="h-full w-full rounded-xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm flex items-center justify-center">
                     <div className="text-center space-y-4">
                       <Brain className="h-24 w-24 text-blue-600 dark:text-blue-400 mx-auto" />
@@ -76,7 +78,7 @@ export default function Component() {
 
         {/* Research Areas */}
         <section id="research" className="w-full py-20 bg-white dark:bg-gray-900">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900 dark:text-white">
                 {t("home.research.title")}
@@ -164,7 +166,7 @@ export default function Component() {
 
         {/* Team Section */}
         <section id="team" className="w-full py-20 bg-gray-50 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900 dark:text-white">
                 {t("home.team.title")}
@@ -177,7 +179,7 @@ export default function Component() {
               <h3 className="text-2xl font-semibold mb-8 text-center text-gray-900 dark:text-white">
                 {t("home.team.pi")}
               </h3>
-              <Card className="max-w-2xl mx-auto border-0 shadow-lg bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+              <Card className="max-w-4xl mx-auto border-0 shadow-lg bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <CardContent className="p-8">
                   <div className="flex flex-col md:flex-row items-center gap-6">
                     <div className="h-32 w-32 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 flex items-center justify-center">
@@ -233,7 +235,7 @@ export default function Component() {
 
         {/* Recent Publications */}
         <section id="publications" className="w-full py-20 bg-white dark:bg-gray-900">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900 dark:text-white">
                 {t("home.publications.title")}
@@ -321,7 +323,7 @@ export default function Component() {
 
         {/* News & Updates */}
         <section id="news" className="w-full py-20 bg-gray-50 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900 dark:text-white">
                 {t("home.news.title")}
@@ -396,14 +398,14 @@ export default function Component() {
 
         {/* Contact Section */}
         <section id="contact" className="w-full py-20 bg-white dark:bg-gray-900">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-gray-900 dark:text-white">
                 {t("home.contact.title")}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">{t("home.contact.subtitle")}</p>
             </div>
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
               <Card className="border-0 shadow-lg bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <CardHeader>
                   <CardTitle className="text-gray-900 dark:text-white">{t("home.contact.info")}</CardTitle>

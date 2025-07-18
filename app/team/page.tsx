@@ -16,7 +16,7 @@ export default function TeamPage() {
       <PageHeader title={t("team.title")} description={t("team.subtitle")} />
 
       <section className="py-16 bg-gray-50 dark:bg-gray-800">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           <Tabs defaultValue="faculty" className="w-full">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
               <TabsTrigger value="faculty">{t("team.faculty")}</TabsTrigger>
@@ -25,7 +25,7 @@ export default function TeamPage() {
             </TabsList>
 
             <TabsContent value="faculty" className="space-y-12">
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-5xl mx-auto">
                 <Card className="border-0 shadow-lg overflow-hidden bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                   <div className="md:flex">
                     <div className="md:w-1/3 bg-gradient-to-br from-blue-100 to-purple-100 p-6 md:p-8 flex items-center justify-center">
@@ -139,7 +139,7 @@ export default function TeamPage() {
             </TabsContent>
 
             <TabsContent value="researchers" className="space-y-12">
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {[
                   {
                     name: "박연구",
@@ -259,7 +259,7 @@ export default function TeamPage() {
             </TabsContent>
 
             <TabsContent value="students" className="space-y-12">
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {[
                   {
                     name: "최석사",

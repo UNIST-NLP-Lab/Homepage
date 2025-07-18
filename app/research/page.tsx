@@ -14,7 +14,7 @@ export default function ResearchPage() {
       <PageHeader title={t("research.title")} description={t("research.subtitle")} />
 
       <section className="py-16">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           <Tabs defaultValue="llm" className="w-full">
             <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-12">
               <TabsTrigger value="llm">Large Language Models</TabsTrigger>
@@ -23,7 +23,7 @@ export default function ResearchPage() {
             </TabsList>
 
             <TabsContent value="llm" className="space-y-12">
-              <div className="grid gap-8 lg:grid-cols-2">
+              <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div>
                   <h2 className="text-3xl font-bold mb-6">{t("research.llm.title")}</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">{t("research.llm.description")}</p>
@@ -108,7 +108,7 @@ export default function ResearchPage() {
             </TabsContent>
 
             <TabsContent value="moe" className="space-y-12">
-              <div className="grid gap-8 lg:grid-cols-2">
+              <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div>
                   <h2 className="text-3xl font-bold mb-6">{t("research.moe.title")}</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">{t("research.moe.description")}</p>
@@ -192,7 +192,7 @@ export default function ResearchPage() {
             </TabsContent>
 
             <TabsContent value="systems" className="space-y-12">
-              <div className="grid gap-8 lg:grid-cols-2">
+              <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div>
                   <h2 className="text-3xl font-bold mb-6">{t("research.systems.title")}</h2>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">{t("research.systems.description")}</p>
@@ -223,7 +223,7 @@ export default function ResearchPage() {
                   {
                     icon: <Code className="h-8 w-8 text-green-600 dark:text-green-400" />,
                     title: "Hardware-Software Co-design",
-                    description: "AI 워크로드��� 최적화된 하드웨어와 소프트웨어의 공동 설계 방법론 개발",
+                    description: "AI 워크로드에 최적화된 하드웨어와 소프트웨어의 공동 설계 방법론 개발",
                   },
                 ].map((item, i) => (
                   <Card

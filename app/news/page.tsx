@@ -115,7 +115,7 @@ export default function NewsPage() {
       <PageHeader title={t("news.title")} description={t("news.subtitle")} />
 
       <section className="py-16 bg-gray-50 dark:bg-gray-800">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           {/* 최신 뉴스 (Featured) */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-8">{t("news.latest")}</h2>

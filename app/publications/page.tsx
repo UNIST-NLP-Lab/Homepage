@@ -167,7 +167,7 @@ const publications = [
     category: "MoE",
     description: "MoE 모델을 위한 양자화 인식 학습 방법",
     abstract:
-      "본 연구는 전문가 혼합 모델(MoE)을 위한 양자화 인식 학습 방법을 제안합니다. 전문가별 양자화 정밀��� 최적화와 라우팅 메커니즘의 양자화 효과를 고려한 학습 알고리즘을 통해, 8비트 및 4비트 양자화에서도 성능 저하를 최소화했습니다. 이 방법은 MoE 모델의 메모리 사용량을 크게 줄이면서도 추론 속도를 향상시켰습니다.",
+      "본 연구는 전문가 혼합 모델(MoE)을 위한 양자화 인식 학습 방법을 제안합니다. 전문가별 양자화 정밀도 최적화와 라우팅 메커니즘의 양자화 효과를 고려한 학습 알고리즘을 통해, 8비트 및 4비트 양자화에서도 성능 저하를 최소화했습니다. 이 방법은 MoE 모델의 메모리 사용량을 크게 줄이면서도 추론 속도를 향상시켰습니다.",
     links: {
       paper: "#",
       code: "#",
@@ -238,7 +238,7 @@ export default function PublicationsPage() {
       <PageHeader title={t("publications.title")} description={t("publications.subtitle")} />
 
       <section className="py-16">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           {/* 필터 및 검색 */}
           <div className="mb-12 space-y-4">
             <div className="flex flex-col gap-4 sm:flex-row">
