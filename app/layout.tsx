@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
 
 export const metadata = {
-  title: "AI Research Lab - LLM & MoE Laboratory",
+  title: "UNIST NLP Lab.",
   description: "대규모 언어 모델과 전문가 혼합 모델 연구실",
     generator: 'v0.dev'
 }

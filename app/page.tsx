@@ -247,10 +247,10 @@ export default function Component() {
             <div className="grid gap-6 md:grid-cols-2">
               {[
                 {
-                  title: "Efficient Mixture of Experts for Large Language Models",
-                  authors: "Kim AI, Park Research, Lee Postdoc",
-                  venue: "NeurIPS 2024",
-                  description: "새로운 MoE 라우팅 알고리즘을 통해 계산 효율성을 40% 향상시킨 연구",
+                  title: "SeqMMR: Sequential Model Merging and LLM Routing for Enhanced Batched Sequential Knowledge Editing",
+                  authors: "Shanbao Qiao, Xuebing Liu, Akshat Gupta, Seung-Hoon Na",
+                  venue: "ACL 2025 Findings",
+                  description: "-",
                 },
                 {
                   title: "Parameter-Efficient Fine-tuning with Adaptive Experts",
@@ -416,9 +416,9 @@ export default function Component() {
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">{t("home.contact.address")}</p>
                       <p className="text-gray-600 dark:text-gray-300">
-                        서울특별시 강남구 테헤란로 123
+                        울산광역시 울주군 유니스트로 50
                         <br />
-                        AI대학교 공과대학 301호
+                        제3공학관 106동 807A호
                       </p>
                     </div>
                   </div>
@@ -426,14 +426,14 @@ export default function Component() {
                     <Mail className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">{t("home.contact.email")}</p>
-                      <p className="text-gray-600 dark:text-gray-300">ailab@university.ac.kr</p>
+                      <p className="text-gray-600 dark:text-gray-300">nash@unist.ac.kr</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Github className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">GitHub</p>
-                      <p className="text-gray-600 dark:text-gray-300">github.com/ai-research-lab</p>
+                      <p className="text-gray-600 dark:text-gray-300">github.com/UNIST-NLP-Lab</p>
                     </div>
                   </div>
                 </CardContent>
