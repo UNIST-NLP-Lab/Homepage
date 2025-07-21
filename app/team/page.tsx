@@ -21,6 +21,7 @@ export default function TeamPage() {
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
               <TabsTrigger value="faculty">{t("team.faculty")}</TabsTrigger>
               <TabsTrigger value="students">{t("team.students")}</TabsTrigger>
+              <TabsTrigger value="alumni">{t("team.alumni")}</TabsTrigger>
             </TabsList>
 
             <TabsContent value="faculty" className="space-y-12">
@@ -132,7 +133,7 @@ export default function TeamPage() {
                 </Card>
               </div>
             </TabsContent>
-            
+
             <TabsContent value="students" className="space-y-12">
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {[
@@ -140,8 +141,8 @@ export default function TeamPage() {
                     name: "최형준",
                     role: "Ph.D. Student",
                     year: "1st Semester",
-                    focus: "-",
-                    thesis: "-",
+                    focus: "Language Model Architecture",
+                    thesis: "Memory-based LM",
                   },
                   {
                     name: "이건희",
@@ -189,15 +190,15 @@ export default function TeamPage() {
                     name: "이준규",
                     role: "Ph.D. - Master Combine Student",
                     year: "1st Semester",
-                    focus: "-",
-                    thesis: "-",
+                    focus: "Resource-Efficient Language Modeling",
+                    thesis: "Compression-Aware Language Modeling for Low-Resource Inference",
                   },
                   {
                     name: "안정민",
                     role: "Master Student",
                     year: "1st Semester",
-                    focus: "-",
-                    thesis: "-",
+                    focus: "Mixture of Experts",
+                    thesis: "Model Merging with Routing Algorithm",
                   },
                   {
                     name: "이균",
@@ -210,8 +211,8 @@ export default function TeamPage() {
                     name: "박양렬",
                     role: "Master Student",
                     year: "1st Semester",
-                    focus: "-",
-                    thesis: "-",
+                    focus: "Mixture of Experts",
+                    thesis: "Retrieval-Integrated MoE for Long-Context Reasoning",
                   },
                 ].map((student, i) => (
                   <Card
@@ -240,6 +241,96 @@ export default function TeamPage() {
                             <div>
                               <p className="font-medium text-gray-900 dark:text-white">{t("team.thesis")}</p>
                               <p className="text-gray-600 dark:text-gray-300">{student.thesis}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="alumni" className="space-y-12">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+                {[
+                  {
+                    name: "Younghoon Lee",
+                    role: "Master",
+                    year: "August 2020",
+                    affilation: "Naver",
+                  },
+                  {
+                    name: "Kwanghyeon Park",
+                    role: "Master",
+                    year: "February 2020",
+                    affilation: "naver",
+                  },
+                  {
+                    name: "Jonghyun Lee",
+                    role: "Master",
+                    year: "February 2022",
+                    affilation: "NC Soft",
+                  },
+                  {
+                    name: "Eunhwan Park",
+                    role: "Master",
+                    year: "February 2023",
+                    affilation: "Buzzni",
+                  },
+                  {
+                    name: "Jeongdu Lee",
+                    role: "Master",
+                    year: "February 2023r",
+                    affilation: "Saltlux",
+                  },
+                  {
+                    name: "Minkyo Jung",
+                    role: "Master",
+                    year: "February 2024",
+                    affilation: "LOTTE Innovate",
+                  },
+                  {
+                    name: "Sungmin Lee",
+                    role: "Master",
+                    year: "February 2024",
+                    affilation: "KT Corporation",
+                  },
+                  {
+                    name: "Joonho Yoon",
+                    role: "Master",
+                    year: "February 2025",
+                    affilation: "KT Corporation",
+                  },
+                  {
+                    name: "Hyunmin Lee",
+                    role: "Master",
+                    year: "February 2025",
+                    affilation: "KEPCO(Korea Electric Power Corporation)"
+                  },
+                ].map((student, i) => (
+                  <Card
+                    key={i}
+                    className="border-0 shadow-md hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700"
+                  >
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="h-12 w-12 rounded-full bg-gradient-to-br from-gray-100 to-blue-100 flex items-center justify-center flex-shrink-0">
+                          <Users className="h-6 w-6 text-gray-600 dark:text-blue-400" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold mb-1 text-gray-900 dark:text-white">{student.name}</h3>
+                          <div className="flex items-center gap-2 mb-3">
+                            <p className="text-sm text-blue-600">{student.role}</p>
+                            <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">
+                              {student.year}
+                            </span>
+                          </div>
+
+                          <div className="space-y-2 text-sm">
+                            <div>
+                              <p className="font-medium text-gray-900 dark:text-white">{t("team.focus")}</p>
+                              <p className="text-gray-600 dark:text-gray-300">{student.affilation}</p>
                             </div>
                           </div>
                         </div>
