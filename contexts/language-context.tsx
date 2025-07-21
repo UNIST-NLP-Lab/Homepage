@@ -124,7 +124,7 @@ const translations = {
     "team.thesis": "Thesis Topic",
     "team.advisor": "Advisor",
     "team.alumni": "Alumni",
-    "team.affilation": "affilation",
+    "team.affilation": "Affilation",
     "team.mindongwook": "민동욱",
 
     // Publications Page
@@ -295,7 +295,7 @@ const translations = {
     "team.thesis": "Thesis Topic",
     "team.advisor": "Advisor",
     "team.alumni": "Alumni",
-    "team.affilation": "affilation",
+    "team.affilation": "Affilation",
     "team.mindongwook": "Dongwook Min",
 
     // Publications Page

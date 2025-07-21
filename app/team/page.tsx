@@ -264,7 +264,7 @@ export default function TeamPage() {
                     name: "Kwanghyeon Park",
                     role: "Master",
                     year: "February 2020",
-                    affilation: "naver",
+                    affilation: "Naver",
                   },
                   {
                     name: "Jonghyun Lee",
