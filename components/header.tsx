@@ -69,7 +69,7 @@ export function Header() {
         </Link>
 
         {/* Right section with navigation and controls */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center justify-end gap-6 ml-auto">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
