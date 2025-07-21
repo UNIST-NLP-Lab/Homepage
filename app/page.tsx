@@ -436,8 +436,8 @@ export default function Component() {
                     <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
                       <li>• 박사과정 학생 (NLP, LLM, MoE, RAG)</li>
                       <li>• 석사과정 학생 (NLP, LLM, MoE, RAG)</li>
-                      <li>• 포스닥 연구원 (AI Systems)</li>
-                      <li>• 학부 인턴 (Programming, Research)</li>
+                      <li>• 포스닥 연구원 (NLP, LLM, MoE, RAG)</li>
+                      <li>• 학부 인턴 (NLP, LLM, MoE, RAG)</li>
                     </ul>
                   </div>
                   <Button

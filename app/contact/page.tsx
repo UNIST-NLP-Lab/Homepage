@@ -119,7 +119,7 @@ export default function ContactPage() {
             {/* 문의 폼 */}
             <div>
               <h2 className="text-2xl font-bold mb-6">{t("contact.inquiry")}</h2>
-              <Card className="border-0 shadow-lg dark:bg-neutral-950 dark:text-neutral-50">
+              {/* <Card className="border-0 shadow-lg dark:bg-neutral-950 dark:text-neutral-50">
                 <CardHeader>
                   <CardTitle>{t("contact.inquiry")}</CardTitle>
                   <CardDescription>{t("contact.inquiryDesc")}</CardDescription>
@@ -221,7 +221,7 @@ export default function ContactPage() {
                     </Button>
                   </form>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               {/* 입학 안내 */}
               <Card className="border-0 shadow-lg mt-8 dark:bg-neutral-950 dark:text-neutral-50">

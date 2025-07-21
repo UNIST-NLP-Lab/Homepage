@@ -204,8 +204,8 @@ export default function TeamPage() {
                     name: "이균",
                     role: "Master Student",
                     year: "1st Semester",
-                    focus: "-",
-                    thesis: "-",
+                    focus: "Knowledge Editing",
+                    thesis: "Reasoning Enhanced Knowledge Editing",
                   },
                   {
                     name: "박양렬",
