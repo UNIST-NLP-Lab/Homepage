@@ -59,7 +59,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md dark:bg-gray-950/80 dark:border-gray-800">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6 gap-2">
+      <div className="container flex h-16 items-center px-4 md:px-6 gap-2">
         <Link href="/" className="flex items-center space-x-2 flex-shrink-0 min-w-0">
           <Brain className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600 dark:text-blue-400 flex-shrink-0" />
           <div className="min-w-0">
@@ -68,8 +68,11 @@ export function Header() {
           </div>
         </Link>
 
+        {/* Spacer to push right section to the end */}
+        <div className="flex-1"></div>
+
         {/* Right section with navigation and controls */}
-        <div className="flex items-center justify-end gap-6 ml-auto">
+        <div className="flex items-center gap-6">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
