@@ -59,7 +59,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md dark:bg-gray-950/80 dark:border-gray-800">
-      <div className="container flex h-16 items-center px-4 md:px-6 gap-2">
+      <div className="w-full max-w-none flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center space-x-2 flex-shrink-0 min-w-0">
           <Brain className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600 dark:text-blue-400 flex-shrink-0" />
           <div className="min-w-0">
@@ -68,11 +68,8 @@ export function Header() {
           </div>
         </Link>
 
-        {/* Spacer to push right section to the end */}
-        <div className="flex-1"></div>
-
         {/* Right section with navigation and controls */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 flex-shrink-0">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
@@ -80,7 +77,7 @@ export function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors",
+                  "text-sm font-medium transition-colors whitespace-nowrap",
                   pathname === item.href
                     ? "text-blue-600 dark:text-blue-400"
                     : "hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-gray-300",
@@ -92,7 +89,7 @@ export function Header() {
           </nav>
 
           {/* Controls */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-shrink-0">
             <LanguageToggle />
             <ThemeToggle />
 
