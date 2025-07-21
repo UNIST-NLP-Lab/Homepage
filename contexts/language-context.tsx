@@ -214,8 +214,8 @@ const translations = {
     "home.research.llm.desc": "Research on efficient training and inference methodologies for large language models",
     "home.research.moe.title": "Mixture of Experts",
     "home.research.moe.desc": "Development of scalable AI architectures through mixture of experts models",
-    "home.research.systems.description": "Techniques for dynamically editing and updating the internal knowledge of LLMs are essential for maintaining accuracy and reliability in real time. Our lab focuses on advancing the efficiency, robustness, and safety of these **Knowledge Editing** mechanisms.",
-    "home.research.systems.focus": "We explore key methods including external-memory editing, local parameter editing, representation-level fine-tuning, and hypernetwork-based editing.",
+    "home.research.knowledge_editing.description": "Techniques for dynamically editing and updating the internal knowledge of LLMs are essential for maintaining accuracy and reliability in real time. Our lab focuses on advancing the efficiency, robustness, and safety of these **Knowledge Editing** mechanisms.",
+    "home.research.knowledge_editing.focus": "We explore key methods including external-memory editing, local parameter editing, representation-level fine-tuning, and hypernetwork-based editing.",
 
     "home.research.viewAll": "View All Research",
 
@@ -255,7 +255,7 @@ const translations = {
     "footer.description": "Creating the future of humanity through next-generation AI technology.",
     "footer.quickLinks": "Quick Links",
     "footer.connect": "Connect",
-    "footer.copyright": "© 2024 AI Research Lab. All rights reserved.",
+    "footer.copyright": "© 2025 UNIST NLP Lab. All rights reserved.",
 
     // Research Page
     "research.title": "Research Areas",
@@ -271,11 +271,11 @@ const translations = {
       "Mixture of Experts (MoE) is an innovative architecture that can significantly improve the efficiency and scalability of large AI models. Our lab conducts cutting-edge research on the design, training, and deployment of MoE models.",
     "research.moe.focus":
       "We particularly focus on sparse MoE architectures, expert routing algorithms, load balancing strategies, and distributed training.",
-    "research.knowledge_editing.title": "Efficient AI Systems",
+    "research.knowledge_editing.title": "Knowledge Editing",
     "research.knowledge_editing.description":
-      "Energy efficiency and sustainability of AI systems are important challenges in modern AI research. Our lab focuses on developing environmentally friendly and resource-efficient AI systems.",
+      "Techniques for dynamically editing and updating the internal knowledge of LLMs are essential for maintaining accuracy and reliability in real time. Our lab focuses on advancing the efficiency, robustness, and safety of these Knowledge Editing mechanisms.",
     "research.knowledge_editing.focus":
-      "We particularly focus on green AI computing, edge AI deployment, federated learning, and hardware-software co-design.",
+      "We explore key methods including external-memory editing, local parameter editing, representation-level fine-tuning, and hypernetwork-based editing.",
     "research.projects.title": "Current Projects",
     "research.status.ongoing": "Ongoing",
     "research.status.planned": "Planned",
