@@ -50,7 +50,8 @@ export function Footer() {
             <h4 className="font-semibold mb-4">{t("footer.connect")}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>nash@unist.ac.kr</li>
-              <li>울산광역시 울주군 언양읍 유니스트길 50, 106동 807A호</li>
+              <li>교수 연구실: 울산광역시 울주군 언양읍 유니스트길 50, 106동 801-7호</li>
+              <li>학생 연구실: 울산광역시 울주군 언양읍 유니스트길 50, 106동 807A호</li>
             </ul>
           </div>
         </div>
