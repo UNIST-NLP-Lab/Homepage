@@ -103,7 +103,7 @@ const translations = {
     "research.moe.focus":
       "특히 희소 MoE 아키텍처, 전문가 라우팅 알고리즘, 부하 균형 전략, 그리고 분산 학습에 초점을 맞추고 있습니다.",
     "research.knowledge_editing.title": "Knowledge Editing",
-    "research.knowledge_editing.description": "LLM 내부의 지식을 동적으로 수정하고 최신화하는 기술은, 모델의 정확성과 안정성을 유지하면서도 실시간 업데이트를 가능하게 합니다. 우리 연구실은 이러한 **Knowledge Editing** 메커니즘의 효율성과 신뢰성을 높이는 데 주력하고 있습니다.",
+    "research.knowledge_editing.description": "LLM 내부의 지식을 동적으로 수정하고 최신화하는 기술은, 모델의 정확성과 안정성을 유지하면서도 실시간 업데이트를 가능하게 합니다. 우리 연구실은 이러한 Knowledge Editing 메커니즘의 효율성과 신뢰성을 높이는 데 주력하고 있습니다.",
     "research.knowledge_editing.focus": "대표적으로 외부 메모리 기반 편집, 국소적 파라미터 수정, 표현 수준 파인튜닝, 하이퍼네트워크 기반 지식 편집 등 다양한 기법을 탐구합니다",
     "research.projects.title": "Current Projects",
     "research.status.ongoing": "진행 중",
@@ -214,7 +214,7 @@ const translations = {
     "home.research.llm.desc": "Research on efficient training and inference methodologies for large language models",
     "home.research.moe.title": "Mixture of Experts",
     "home.research.moe.desc": "Development of scalable AI architectures through mixture of experts models",
-    "home.research.knowledge_editing.description": "Techniques for dynamically editing and updating the internal knowledge of LLMs are essential for maintaining accuracy and reliability in real time. Our lab focuses on advancing the efficiency, robustness, and safety of these **Knowledge Editing** mechanisms.",
+    "home.research.knowledge_editing.description": "Techniques for dynamically editing and updating the internal knowledge of LLMs are essential for maintaining accuracy and reliability in real time. Our lab focuses on advancing the efficiency, robustness, and safety of these Knowledge Editing mechanisms.",
     "home.research.knowledge_editing.focus": "We explore key methods including external-memory editing, local parameter editing, representation-level fine-tuning, and hypernetwork-based editing.",
 
     "home.research.viewAll": "View All Research",

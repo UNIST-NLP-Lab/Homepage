@@ -16,13 +16,13 @@ export default function ResearchPage() {
       <section className="py-16">
         <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           <Tabs defaultValue="llm" className="w-full pt-4 sm:pt-16">
-            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-12">
+            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-20">
               <TabsTrigger value="llm">Large Language Models</TabsTrigger>
               <TabsTrigger value="moe">Mixture of Experts</TabsTrigger>
               <TabsTrigger value="ke">Knowledge Editing</TabsTrigger>
             </TabsList>
             <div className="mt-8" />
-            <TabsContent value="llm" className="space-y-12">
+            <TabsContent value="llm" className="space-y-12 mt-20">
               <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div>
                   <h2 className="text-3xl font-bold mb-6">{t("research.llm.title")}</h2>
