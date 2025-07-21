@@ -19,7 +19,7 @@ export default function ResearchPage() {
             <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-12">
               <TabsTrigger value="llm">Large Language Models</TabsTrigger>
               <TabsTrigger value="moe">Mixture of Experts</TabsTrigger>
-              <TabsTrigger value="systems">Efficient AI Systems</TabsTrigger>
+              <TabsTrigger value="ke">Knowledge Editing</TabsTrigger>
             </TabsList>
 
             <TabsContent value="llm" className="space-y-12">
@@ -78,19 +78,9 @@ export default function ResearchPage() {
                 <div className="space-y-6">
                   {[
                     {
-                      title: "EfficientLLM: Compression Techniques for Large Models",
-                      description: "LLM의 크기를 90% 이상 줄이면서도 성능을 95% 이상 유지하는 압축 기법 개발",
+                      title: "-",
+                      description: "-",
                       status: t("research.status.ongoing"),
-                    },
-                    {
-                      title: "MultiModal-LLM: Vision-Language Integration",
-                      description: "이미지와 텍스트를 함께 이해하고 추론할 수 있는 다중 모달 언어 모델 개발",
-                      status: t("research.status.ongoing"),
-                    },
-                    {
-                      title: "AdaptiveLLM: Domain-Specific Adaptation",
-                      description: "의료, 법률 등 특정 도메인에 효율적으로 적응하는 LLM 파인튜닝 기법 연구",
-                      status: t("research.status.planned"),
                     },
                   ].map((project, i) => (
                     <div key={i} className="border-b pb-6 last:border-0 last:pb-0">
@@ -162,19 +152,9 @@ export default function ResearchPage() {
                 <div className="space-y-6">
                   {[
                     {
-                      title: "AdaptiveMoE: Dynamic Expert Selection",
-                      description: "입력 복잡성에 따라 동적으로 전문가 수를 조절하는 적응형 MoE 아키텍처 개발",
+                      title: "-",
+                      description: "-",
                       status: t("research.status.ongoing"),
-                    },
-                    {
-                      title: "DistributedMoE: Scaling to Trillion Parameters",
-                      description: "수천 개의 GPU에서 효율적으로 학습 가능한 조 단위 파라미터 MoE 시스템 개발",
-                      status: t("research.status.ongoing"),
-                    },
-                    {
-                      title: "HierarchicalMoE: Multi-level Expert Structures",
-                      description: "계층적 전문가 구조를 통해 복잡한 태스크를 효율적으로 처리하는 MoE 모델 연구",
-                      status: t("research.status.planned"),
                     },
                   ].map((project, i) => (
                     <div key={i} className="border-b pb-6 last:border-0 last:pb-0">
@@ -191,7 +171,7 @@ export default function ResearchPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="systems" className="space-y-12">
+            <TabsContent value="ke" className="space-y-12">
               <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div>
                   <h2 className="text-3xl font-bold mb-6">{t("research.systems.title")}</h2>
@@ -207,23 +187,23 @@ export default function ResearchPage() {
                 {[
                   {
                     icon: <Cpu className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "Green AI Computing",
-                    description: "에너지 소비를 최소화하면서 AI 모델의 학습 및 추론을 수행하는 기법 연구",
+                    title: "Efficient Knowledge Editing",
+                    description: "에너지 효율을 고려한 LLM 지식 편집 기법을 통해 최소한의 연산으로 정확한 지식 수정 수행",
                   },
                   {
                     icon: <Network className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "Edge AI Deployment",
-                    description: "제한된 자원을 가진 엣지 디바이스에서 효율적으로 AI 모델을 실행하는 기술 개발",
+                    title: "On-Device Knowledge Updating",
+                    description: "엣지 디바이스에서 실시간 지식 수정이 가능하도록 경량화된 LLM 지식 편집 알고리즘 개발",
                   },
                   {
                     icon: <Database className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "Federated Learning",
-                    description: "데이터 프라이버시를 보존하면서 분산된 데이터로부터 학습하는 연합 학습 기법 연구",
+                    title: "Federated Knowledge Editing",
+                    description: "프라이버시를 보장하면서도 분산된 사용자 환경에서 지식을 반영할 수 있는 LLM 편집 프레임워크 연구",
                   },
                   {
                     icon: <Code className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "Hardware-Software Co-design",
-                    description: "AI 워크로드에 최적화된 하드웨어와 소프트웨어의 공동 설계 방법론 개발",
+                    title: "System-level Optimization for Editing",
+                    description: "지식 편집 효율을 극대화하기 위한 하드웨어-소프트웨어 공동 최적화 및 아키텍처 설계",
                   },
                 ].map((item, i) => (
                   <Card
@@ -246,20 +226,9 @@ export default function ResearchPage() {
                 <div className="space-y-6">
                   {[
                     {
-                      title: "GreenLLM: Energy-Efficient Language Models",
-                      description: "에너지 소비를 80% 줄이면서도 성능을 유지하는 친환경 LLM 아키텍처 개발",
+                      title: "-",
+                      description: "-",
                       status: t("research.status.ongoing"),
-                    },
-                    {
-                      title: "EdgeMoE: Lightweight Mixture of Experts",
-                      description: "모바일 및 IoT 디바이스에서 실행 가능한 경량화된 MoE 모델 개발",
-                      status: t("research.status.ongoing"),
-                    },
-                    {
-                      title: "FedAI: Privacy-Preserving Collaborative Learning",
-                      description:
-                        "의료 데이터와 같은 민감한 정보를 보호하면서 협력적 학습이 가능한 연합 학습 시스템 개발",
-                      status: t("research.status.planned"),
                     },
                   ].map((project, i) => (
                     <div key={i} className="border-b pb-6 last:border-0 last:pb-0">
