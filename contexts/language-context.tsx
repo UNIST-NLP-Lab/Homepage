@@ -46,8 +46,8 @@ const translations = {
     "home.research.llm.desc": "대규모 언어 모델의 효율적인 학습과 추론 방법론 연구",
     "home.research.moe.title": "Mixture of Experts",
     "home.research.moe.desc": "전문가 혼합 모델을 통한 확장 가능한 AI 아키텍처 개발",
-    "home.research.efficient.title": "Efficient AI Systems",
-    "home.research.efficient.desc": "에너지 효율적이고 지속 가능한 AI 시스템 구축",
+    "home.research.knowledge_editing.title": "LLM Knowledge Editing",
+    "home.research.knowledge_editing.desc": "LLM의 내재 지식을 동적으로 수정하고 최신화하는 기술을 연구합니다",
     "home.research.viewAll": "View All Research",
 
     // Team Section
@@ -102,11 +102,9 @@ const translations = {
       "전문가 혼합 모델(MoE)은 대규모 AI 모델의 효율성과 확장성을 크게 향상시킬 수 있는 혁신적인 아키텍처입니다. 우리 연구실은 MoE 모델의 설계, 학습, 그리고 배포에 관한 최첨단 연구를 수행하고 있습니다.",
     "research.moe.focus":
       "특히 희소 MoE 아키텍처, 전문가 라우팅 알고리즘, 부하 균형 전략, 그리고 분산 학습에 초점을 맞추고 있습니다.",
-    "research.systems.title": "Efficient AI Systems",
-    "research.systems.description":
-      "AI 시스템의 에너지 효율성과 지속 가능성은 현대 AI 연구의 중요한 과제입니다. 우리 연구실은 환경 친화적이고 자원 효율적인 AI 시스템 개발에 주력하고 있습니다.",
-    "research.systems.focus":
-      "특히 그린 AI 컴퓨팅, 엣지 AI 배포, 연합 학습, 그리고 하드웨어-소프트웨어 공동 설계에 초점을 맞추고 있습니다.",
+    "research.knowledge_editing.title": "Knowledge Editing",
+    "research.knowledge_editing.description": "LLM 내부의 지식을 동적으로 수정하고 최신화하는 기술은, 모델의 정확성과 안정성을 유지하면서도 실시간 업데이트를 가능하게 합니다. 우리 연구실은 이러한 **Knowledge Editing** 메커니즘의 효율성과 신뢰성을 높이는 데 주력하고 있습니다.",
+    "research.knowledge_editing.focus": "대표적으로 외부 메모리 기반 편집, 국소적 파라미터 수정, 표현 수준 파인튜닝, 하이퍼네트워크 기반 지식 편집 등 다양한 기법을 탐구합니다",
     "research.projects.title": "Current Projects",
     "research.status.ongoing": "진행 중",
     "research.status.planned": "계획 중",
@@ -216,8 +214,9 @@ const translations = {
     "home.research.llm.desc": "Research on efficient training and inference methodologies for large language models",
     "home.research.moe.title": "Mixture of Experts",
     "home.research.moe.desc": "Development of scalable AI architectures through mixture of experts models",
-    "home.research.efficient.title": "Efficient AI Systems",
-    "home.research.efficient.desc": "Building energy-efficient and sustainable AI systems",
+    "home.research.systems.description": "Techniques for dynamically editing and updating the internal knowledge of LLMs are essential for maintaining accuracy and reliability in real time. Our lab focuses on advancing the efficiency, robustness, and safety of these **Knowledge Editing** mechanisms.",
+    "home.research.systems.focus": "We explore key methods including external-memory editing, local parameter editing, representation-level fine-tuning, and hypernetwork-based editing.",
+
     "home.research.viewAll": "View All Research",
 
     // Team Section
@@ -272,10 +271,10 @@ const translations = {
       "Mixture of Experts (MoE) is an innovative architecture that can significantly improve the efficiency and scalability of large AI models. Our lab conducts cutting-edge research on the design, training, and deployment of MoE models.",
     "research.moe.focus":
       "We particularly focus on sparse MoE architectures, expert routing algorithms, load balancing strategies, and distributed training.",
-    "research.systems.title": "Efficient AI Systems",
-    "research.systems.description":
+    "research.knowledge_editing.title": "Efficient AI Systems",
+    "research.knowledge_editing.description":
       "Energy efficiency and sustainability of AI systems are important challenges in modern AI research. Our lab focuses on developing environmentally friendly and resource-efficient AI systems.",
-    "research.systems.focus":
+    "research.knowledge_editing.focus":
       "We particularly focus on green AI computing, edge AI deployment, federated learning, and hardware-software co-design.",
     "research.projects.title": "Current Projects",
     "research.status.ongoing": "Ongoing",

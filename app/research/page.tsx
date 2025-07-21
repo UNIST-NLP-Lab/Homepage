@@ -174,9 +174,9 @@ export default function ResearchPage() {
             <TabsContent value="ke" className="space-y-12">
               <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div>
-                  <h2 className="text-3xl font-bold mb-6">{t("research.systems.title")}</h2>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">{t("research.systems.description")}</p>
-                  <p className="text-lg text-gray-600 dark:text-gray-300">{t("research.systems.focus")}</p>
+                  <h2 className="text-3xl font-bold mb-6">{t("research.knowledge_editing.title")}</h2>
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">{t("research.knowledge_editing.description")}</p>
+                  <p className="text-lg text-gray-600 dark:text-gray-300">{t("research.knowledge_editing.focus")}</p>
                 </div>
                 <div className="bg-green-50 dark:bg-gray-800 rounded-xl p-8 flex items-center justify-center">
                   <Award className="h-32 w-32 text-green-600 dark:text-green-400" />
@@ -187,23 +187,23 @@ export default function ResearchPage() {
                 {[
                   {
                     icon: <Cpu className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "Efficient Knowledge Editing",
-                    description: "에너지 효율을 고려한 LLM 지식 편집 기법을 통해 최소한의 연산으로 정확한 지식 수정 수행",
+                    title: "External Memory Editing",
+                    description: "추가 외부 메모리 또는 보조 네트워크를 활용해 LLM 내 특정 지식을 정확히 수정하면서 기존 파라미터는 건드리지 않는 방식 연구", 
                   },
                   {
                     icon: <Network className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "On-Device Knowledge Updating",
-                    description: "엣지 디바이스에서 실시간 지식 수정이 가능하도록 경량화된 LLM 지식 편집 알고리즘 개발",
+                    title: "Local Parameter Editing",
+                    description: "모델 특정 레이어나 파라미터 영역에만 국소적으로 가중치 업데이트를 수행해 지식을 수정하고 연결된 지식 손실 최소화하는 연구", 
                   },
                   {
                     icon: <Database className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "Federated Knowledge Editing",
-                    description: "프라이버시를 보장하면서도 분산된 사용자 환경에서 지식을 반영할 수 있는 LLM 편집 프레임워크 연구",
+                    title: "Representation Fine‑Tuning",
+                    description: "입력 표현 수준에서 선형 또는 입력-의존적 스페이스 업데이트를 통해 온디바이스·실시간 지식 수정 가능성을 탐색하는 연구", 
                   },
                   {
                     icon: <Code className="h-8 w-8 text-green-600 dark:text-green-400" />,
-                    title: "System-level Optimization for Editing",
-                    description: "지식 편집 효율을 극대화하기 위한 하드웨어-소프트웨어 공동 최적화 및 아키텍처 설계",
+                    title: "Hypernetwork‑Based Editing",
+                    description: "하이퍼네트워크를 이용해 편집할 내용마다 적응형 가중치 변형을 생성하여 파라미터 업데이트를 제어하는 접근법 연구", 
                   },
                 ].map((item, i) => (
                   <Card

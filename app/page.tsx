@@ -133,17 +133,17 @@ export default function Component() {
                   <div className="h-12 w-12 rounded-lg bg-green-100 dark:bg-green-900/50 flex items-center justify-center mb-4">
                     <Award className="h-6 w-6 text-green-600 dark:text-green-400" />
                   </div>
-                  <CardTitle className="text-gray-900 dark:text-white">{t("home.research.efficient.title")}</CardTitle>
+                  <CardTitle className="text-gray-900 dark:text-white">{t("home.research.knowledge_editing.title")}</CardTitle>
                   <CardDescription className="text-gray-600 dark:text-gray-300">
-                    {t("home.research.efficient.desc")}
+                    {t("home.research.knowledge_editing.desc")}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                    <li>• Green AI Computing</li>
-                    <li>• Edge AI Deployment</li>
-                    <li>• Federated Learning</li>
-                    <li>• Hardware-Software Co-design</li>
+                    <li>• External Memory Editing</li>
+                    <li>• Local Parameter Editing</li>
+                    <li>• Representation FineTuning</li>
+                    <li>• Hypernetwork Based Editing</li>
                   </ul>
                 </CardContent>
               </Card>
