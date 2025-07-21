@@ -16,7 +16,7 @@ export default function ResearchPage() {
       <section className="py-8 sm:py-16">
         <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           <Tabs defaultValue="llm" className="w-full">
-            <div className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 pb-4 pt-4 mb-12">
+            <div className="pb-4 pt-4 mb-12">
               <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 h-auto">
                 <TabsTrigger value="llm" className="py-3 px-4 text-sm sm:text-base">Large Language Models</TabsTrigger>
                 <TabsTrigger value="moe" className="py-3 px-4 text-sm sm:text-base">Mixture of Experts</TabsTrigger>
