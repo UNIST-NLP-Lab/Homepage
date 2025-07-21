@@ -159,7 +159,7 @@ export default function TeamPage() {
                     thesis: "-",
                   },
                   {
-                    name: "민동욱",
+                    name: t("team.mindongwook"),
                     role: "Ph.D. - Master Combine Student",
                     year: "4th Semester",
                     focus: "Conversational AI",
@@ -329,7 +329,7 @@ export default function TeamPage() {
 
                           <div className="space-y-2 text-sm">
                             <div>
-                              <p className="font-medium text-gray-900 dark:text-white">{t("team.focus")}</p>
+                              <p className="font-medium text-gray-900 dark:text-white">{t("team.affilation")}</p>
                               <p className="text-gray-600 dark:text-gray-300">{student.affilation}</p>
                             </div>
                           </div>

@@ -127,6 +127,7 @@ const translations = {
     "team.advisor": "Advisor",
     "team.alumni": "Alumni",
     "team.affilation": "affilation",
+    "team.mindongwook": "민동욱",
 
     // Publications Page
     "publications.title": "Publications",
@@ -296,6 +297,7 @@ const translations = {
     "team.advisor": "Advisor",
     "team.alumni": "Alumni",
     "team.affilation": "affilation",
+    "team.mindongwook": "Dongwook Min",
 
     // Publications Page
     "publications.title": "Publications",
