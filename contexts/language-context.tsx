@@ -17,12 +17,12 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   ko: {
     // Header
-    "nav.home": "홈",
-    "nav.research": "연구",
-    "nav.team": "팀",
-    "nav.publications": "논문",
-    "nav.news": "소식",
-    "nav.contact": "연락",
+    "nav.home": "Home",
+    "nav.research": "Research",
+    "nav.team": "Team",
+    "nav.publications": "Publications",
+    "nav.news": "News",
+    "nav.contact": "Contact",
     "nav.theme": "테마",
     "nav.language": "언어",
     "nav.forceToggle": "강제 토글",
@@ -125,6 +125,8 @@ const translations = {
     "team.bio": "Bio",
     "team.thesis": "Thesis Topic",
     "team.advisor": "Advisor",
+    "team.alumni": "Alumni",
+    "team.affilation": "affilation",
 
     // Publications Page
     "publications.title": "Publications",
@@ -292,6 +294,8 @@ const translations = {
     "team.bio": "Bio",
     "team.thesis": "Thesis Topic",
     "team.advisor": "Advisor",
+    "team.alumni": "Alumni",
+    "team.affilation": "affilation",
 
     // Publications Page
     "publications.title": "Publications",
