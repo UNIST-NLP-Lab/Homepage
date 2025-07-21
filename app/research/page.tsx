@@ -16,16 +16,16 @@ export default function ResearchPage() {
       <section className="py-8 sm:py-16">
         <div className="container px-4 md:px-6 max-w-7xl mx-auto">
           <Tabs defaultValue="llm" className="w-full">
-            <div className="sticky top-4 z-10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm pb-4 mb-8 sm:mb-12">
-              <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3">
-                <TabsTrigger value="llm">Large Language Models</TabsTrigger>
-                <TabsTrigger value="moe">Mixture of Experts</TabsTrigger>
-                <TabsTrigger value="ke">Knowledge Editing</TabsTrigger>
+            <div className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 pb-4 pt-4 mb-12">
+              <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 h-auto">
+                <TabsTrigger value="llm" className="py-3 px-4 text-sm sm:text-base">Large Language Models</TabsTrigger>
+                <TabsTrigger value="moe" className="py-3 px-4 text-sm sm:text-base">Mixture of Experts</TabsTrigger>
+                <TabsTrigger value="ke" className="py-3 px-4 text-sm sm:text-base">Knowledge Editing</TabsTrigger>
               </TabsList>
             </div>
             
-            <TabsContent value="llm" className="space-y-8 sm:space-y-12">
-              <div className="grid gap-8 lg:grid-cols-2 items-center">
+            <TabsContent value="llm" className="space-y-8 sm:space-y-12 mt-0">
+              <div className="grid gap-8 lg:grid-cols-2 items-center pt-4">
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">{t("research.llm.title")}</h2>
                   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6">{t("research.llm.description")}</p>
@@ -99,8 +99,8 @@ export default function ResearchPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="moe" className="space-y-8 sm:space-y-12">
-              <div className="grid gap-8 lg:grid-cols-2 items-center">
+            <TabsContent value="moe" className="space-y-8 sm:space-y-12 mt-0">
+              <div className="grid gap-8 lg:grid-cols-2 items-center pt-4">
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">{t("research.moe.title")}</h2>
                   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6">{t("research.moe.description")}</p>
@@ -173,8 +173,8 @@ export default function ResearchPage() {
               </div>
             </TabsContent>
 
-            <TabsContent value="ke" className="space-y-8 sm:space-y-12">
-              <div className="grid gap-8 lg:grid-cols-2 items-center">
+            <TabsContent value="ke" className="space-y-8 sm:space-y-12 mt-0">
+              <div className="grid gap-8 lg:grid-cols-2 items-center pt-4">
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">{t("research.knowledge_editing.title")}</h2>
                   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6">{t("research.knowledge_editing.description")}</p>
