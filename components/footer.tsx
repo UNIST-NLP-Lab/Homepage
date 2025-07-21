@@ -15,8 +15,8 @@ export function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <Brain className="h-6 w-6 text-blue-400" />
               <div>
-                <h3 className="font-bold">AI Research Lab</h3>
-                <p className="text-sm text-gray-400">LLM & MoE Laboratory</p>
+                <h3 className="font-bold">UNIST NLP Lab.</h3>
+                <p className="text-sm text-gray-400">LLM Laboratory</p>
               </div>
             </div>
             <p className="text-sm text-gray-400">{t("footer.description")}</p>
@@ -49,9 +49,8 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">{t("footer.connect")}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>ailab@university.ac.kr</li>
-              <li>+82-2-1234-5678</li>
-              <li>서울특별시 강남구 테헤란로 123</li>
+              <li>nash@unist.ac.kr</li>
+              <li>울산광역시 울주군 언양읍 유니스트길 50, 106동 807A호</li>
             </ul>
           </div>
         </div>
