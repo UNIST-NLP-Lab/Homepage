@@ -276,7 +276,7 @@ export default function TeamPage() {
                     name: "Eunhwan Park",
                     role: "Master",
                     year: "February 2023",
-                    affilation: "Buzzni",
+                    affilation: "MOREH",
                   },
                   {
                     name: "Jeongdu Lee",
