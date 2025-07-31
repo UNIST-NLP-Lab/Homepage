@@ -4,7 +4,7 @@ import { PageHeader } from "@/components/page-header"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
-import { Users, Mail, Github, ExternalLink, GraduationCap, Award } from "lucide-react"
+import { Users, Mail, Github, ExternalLink, GraduationCap, Award, Globe } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -143,6 +143,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "Language Model Architecture",
                     thesis: "Memory-based LM",
+                    homepage: "#"
                   },
                   {
                     name: "이건희",
@@ -150,6 +151,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "-",
                     thesis: "-",
+                    homepage: "#"
                   },
                   {
                     name: "Chunmei Liu",
@@ -157,6 +159,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "-",
                     thesis: "-",
+                    homepage: "#"
                   },
                   {
                     name: t("team.mindongwook"),
@@ -164,6 +167,7 @@ export default function TeamPage() {
                     year: "4th Semester",
                     focus: "Conversational AI",
                     thesis: "Natural Language Interaction via Conversational AI",
+                    homepage: "https://cv.mindong.uk" // 실제 홈페이지 URL
                   },
                   {
                     name: "이승호",
@@ -171,6 +175,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "-",
                     thesis: "-",
+                    homepage: "#"
                   },
                   {
                     name: "바자르와니 주치",
@@ -178,6 +183,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "-",
                     thesis: "-",
+                    homepage: "#"
                   },
                   {
                     name: "강전휘",
@@ -185,13 +191,15 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "-",
                     thesis: "-",
+                    homepage: "#"
                   },
                   {
                     name: "이준규",
                     role: "Ph.D. - Master Combine Student",
-                    year: "1st Semester",
+                    year: "1st Semester",    
                     focus: "Resource-Efficient Language Modeling",
                     thesis: "Compression-Aware Language Modeling for Low-Resource Inference",
+                    homepage: "#"
                   },
                   {
                     name: "안정민",
@@ -199,6 +207,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "Mixture of Experts",
                     thesis: "Model Merging with Routing Algorithm",
+                    homepage: "#"
                   },
                   {
                     name: "이균",
@@ -206,6 +215,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "Knowledge Editing",
                     thesis: "Reasoning Enhanced Knowledge Editing",
+                    homepage: "#"
                   },
                   {
                     name: "박양렬",
@@ -213,6 +223,7 @@ export default function TeamPage() {
                     year: "1st Semester",
                     focus: "Mixture of Experts",
                     thesis: "Retrieval-Integrated MoE for Long-Context Reasoning",
+                    homepage: "#"
                   },
                 ].map((student, i) => (
                   <Card
@@ -224,8 +235,18 @@ export default function TeamPage() {
                         <div className="h-12 w-12 rounded-full bg-gradient-to-br from-gray-100 to-blue-100 flex items-center justify-center flex-shrink-0">
                           <Users className="h-6 w-6 text-gray-600 dark:text-blue-400" />
                         </div>
-                        <div>
-                          <h3 className="font-semibold mb-1 text-gray-900 dark:text-white">{student.name}</h3>
+                        <div className="flex-1">
+                          <div className="flex items-center justify-between mb-1">
+                            <h3 className="font-semibold text-gray-900 dark:text-white">{student.name}</h3>
+                            <Link 
+                              href={student.homepage} 
+                              className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                              target={student.homepage !== "#" ? "_blank" : "_self"}
+                              rel={student.homepage !== "#" ? "noopener noreferrer" : ""}
+                            >
+                              <Globe className="h-4 w-4" />
+                            </Link>
+                          </div>
                           <div className="flex items-center gap-2 mb-3">
                             <p className="text-sm text-blue-600">{student.role}</p>
                             <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">
