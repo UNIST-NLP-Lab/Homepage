@@ -225,6 +225,14 @@ export default function TeamPage() {
                     thesis: "Retrieval-Integrated MoE for Long-Context Reasoning",
                     homepage: "#"
                   },
+                  {
+                    name: "김지호",
+                    role: "Intern",
+                    year: "-",
+                    focus: "-",
+                    thesis: "-",
+                    homepage: "#"
+                  },
                 ].map((student, i) => (
                   <Card
                     key={i}
