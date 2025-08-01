@@ -16,7 +16,8 @@ export default function Component() {
         {/* Hero Section */}
         <section className="w-full py-20 md:py-32">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
-            <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
+            {/* <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center"> */}
+            <div className="grid gap-8 lg:gap-16 items-center">
               <div className="space-y-6 text-center lg:text-left">
                 <div className="space-y-4">
                   <Badge
@@ -27,7 +28,7 @@ export default function Component() {
                   </Badge>
                   <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white">
                     {t("home.hero.title")}
-                    <span className="text-blue-600 dark:text-blue-400">{t("home.hero.titleHighlight")}</span>
+                    {/* <span className="text-blue-600 dark:text-blue-400">{t("home.hero.titleHighlight")}</span> */}
                   </h1>
                   <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0">
                     {t("home.hero.description")}
@@ -54,7 +55,7 @@ export default function Component() {
                   </Button>
                 </div>
               </div>
-              <div className="relative flex justify-center lg:justify-end">
+              {/* <div className="relative flex justify-center lg:justify-end">
                 <div className="w-full max-w-md aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 p-8">
                   <div className="h-full w-full rounded-xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm flex items-center justify-center">
                     <div className="text-center space-y-4">
@@ -71,7 +72,7 @@ export default function Component() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

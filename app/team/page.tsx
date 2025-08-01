@@ -48,9 +48,9 @@ export default function TeamPage() {
                           <Link href="#" className="text-gray-500 hover:text-gray-700">
                             <Github className="h-5 w-5" />
                           </Link>
-                          <Link href="#" className="text-gray-500 hover:text-gray-700">
+                          <a href="/prof_page.html" className="text-gray-500 hover:text-gray-700">
                             <ExternalLink className="h-5 w-5" />
-                          </Link>
+                          </a>
                         </div>
                       </div>
 
@@ -246,14 +246,21 @@ export default function TeamPage() {
                         <div className="flex-1">
                           <div className="flex items-center justify-between mb-1">
                             <h3 className="font-semibold text-gray-900 dark:text-white">{student.name}</h3>
-                            <Link 
-                              href={student.homepage} 
-                              className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                              target={student.homepage !== "#" ? "_blank" : "_self"}
-                              rel={student.homepage !== "#" ? "noopener noreferrer" : ""}
-                            >
-                              <Globe className="h-4 w-4" />
-                            </Link>
+                            {student.homepage && student.homepage !== "#" ? (
+                              <Link 
+                                href={student.homepage} 
+                                className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Personal Homepage"
+                              >
+                                <Globe className="h-4 w-4" />
+                              </Link>
+                            ) : (
+                              <div className="text-gray-300 dark:text-gray-600 cursor-not-allowed">
+                                <Globe className="h-4 w-4" />
+                              </div>
+                            )}
                           </div>
                           <div className="flex items-center gap-2 mb-3">
                             <p className="text-sm text-blue-600">{student.role}</p>
@@ -287,55 +294,55 @@ export default function TeamPage() {
                     name: "Younghoon Lee",
                     role: "Master",
                     year: "August 2020",
-                    affilation: "Naver",
+                    affiliation: "Naver",
                   },
                   {
                     name: "Kwanghyeon Park",
                     role: "Master",
                     year: "February 2020",
-                    affilation: "Naver",
+                    affiliation: "Naver",
                   },
                   {
                     name: "Jonghyun Lee",
                     role: "Master",
                     year: "February 2022",
-                    affilation: "NC Soft",
+                    affiliation: "NC Soft",
                   },
                   {
                     name: "Eunhwan Park",
                     role: "Master",
                     year: "February 2023",
-                    affilation: "MOREH",
+                    affiliation: "MOREH",
                   },
                   {
                     name: "Jeongdu Lee",
                     role: "Master",
-                    year: "February 2023r",
-                    affilation: "Saltlux",
+                    year: "February 2023",
+                    affiliation: "Saltlux",
                   },
                   {
                     name: "Minkyo Jung",
                     role: "Master",
                     year: "February 2024",
-                    affilation: "LOTTE Innovate",
+                    affiliation: "LOTTE Innovate",
                   },
                   {
                     name: "Sungmin Lee",
                     role: "Master",
                     year: "February 2024",
-                    affilation: "KT Corporation",
+                    affiliation: "KT Corporation",
                   },
                   {
                     name: "Joonho Yoon",
                     role: "Master",
                     year: "February 2025",
-                    affilation: "KT Corporation",
+                    affiliation: "KT Corporation",
                   },
                   {
                     name: "Hyunmin Lee",
                     role: "Master",
                     year: "February 2025",
-                    affilation: "KEPCO(Korea Electric Power Corporation)"
+                    affiliation: "KEPCO(Korea Electric Power Corporation)"
                   },
                 ].map((student, i) => (
                   <Card
@@ -358,8 +365,8 @@ export default function TeamPage() {
 
                           <div className="space-y-2 text-sm">
                             <div>
-                              <p className="font-medium text-gray-900 dark:text-white">{t("team.affilation")}</p>
-                              <p className="text-gray-600 dark:text-gray-300">{student.affilation}</p>
+                              <p className="font-medium text-gray-900 dark:text-white">{t("team.affiliation")}</p>
+                              <p className="text-gray-600 dark:text-gray-300">{student.affiliation}</p>
                             </div>
                           </div>
                         </div>

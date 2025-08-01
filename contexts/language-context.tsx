@@ -29,10 +29,10 @@ const translations = {
 
     // Home Page
     "home.hero.badge": "Advancing AI Research",
-    "home.hero.title": "Large Language Models &",
+    "home.hero.title": "Natural Language Processing",
     "home.hero.titleHighlight": " Mixture of Experts",
     "home.hero.description":
-      "우리 연구실은 대규모 언어 모델과 전문가 혼합 모델을 통해 차세대 AI 시스템을 개발하고 있습니다. 효율적이고 확장 가능한 AI 아키텍처 연구에 집중합니다.",
+      "우리 연구실은 자연어처리 분야에서 LLM의 MoE, Reasoning, Knowledge Editing 등의 핵심 기술과 RAG를 포함한 정보 검색 시스템을 연구하고 있습니다. 대규모 언어모델의 효율성과 성능 향상을 위한 다양한 방법론을 탐구하며, 실용적인 NLP 응용 기술 개발에 집중하고 있습니다.",
     "home.hero.researchBtn": "Research Overview",
     "home.hero.joinBtn": "Join Our Team",
     "home.hero.currentFocus": "Current Focus",
@@ -124,7 +124,7 @@ const translations = {
     "team.thesis": "Thesis Topic",
     "team.advisor": "Advisor",
     "team.alumni": "Alumni",
-    "team.affilation": "Affilation",
+    "team.affiliation": "Affiliation",
     "team.mindongwook": "민동욱",
 
     // Publications Page
@@ -200,7 +200,7 @@ const translations = {
     "home.hero.title": "Large Language Models &",
     "home.hero.titleHighlight": " Mixture of Experts",
     "home.hero.description":
-      "Our research lab develops next-generation AI systems through large language models and mixture of experts models. We focus on efficient and scalable AI architecture research.",
+      "Our research lab focuses on natural language processing, investigating key technologies such as MoE, reasoning, and knowledge editing in large language models, as well as information retrieval systems including RAG. We explore various methodologies to enhance the efficiency and performance of large language models, with a focus on developing practical NLP applications.",
     "home.hero.researchBtn": "Research Overview",
     "home.hero.joinBtn": "Join Our Team",
     "home.hero.currentFocus": "Current Focus",
